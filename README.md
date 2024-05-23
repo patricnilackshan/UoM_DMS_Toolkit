@@ -1,15 +1,12 @@
 # UoM_DMS_Toolkit
-UoM_DMS_Toolkit streamlines file tasks for students, faculty, and staff at UoM. Enjoy data-free downloads/uploads and multimedia processing, including M3U8 to MP4 conversion. Say goodbye to bandwidth worries and focus on your education!
 
-<br>
-
-## 😁 an IDEA by PATRIC NILACKSHAN
+### 😁 an IDEA by PATRIC NILACKSHAN
 
 <br>
 
 
 ## Introduction
-This documentation provides a set of CLI codes for interacting with a Document Management System (DMS) provided for educational purposes at the university. The DMS allows data-free downloads and uploads, making it convenient for educational activities.
+UoM_DMS_Toolkit streamlines file tasks for students, faculty, and staff at UoM. Enjoy data-free downloads/uploads and multimedia processing, including M3U8 to MP4 conversion. Say goodbye to bandwidth worries and focus on your education!
 
 <br>
 <br>
@@ -35,7 +32,7 @@ sudo apt install ffmpeg -y
 ## Usage
 ### Mapping DMS WebDAV Share
 `
-net use Z: https://dms.uom.lk/remote.php/webdav/ /user:userName userPassword
+net use Z: https://dms.uom.lk/remote.php/webdav/ /user:userName:userPassword
 `
 
 <br>
@@ -58,14 +55,14 @@ ffmpeg -i https://example.com/video.m3u8 -c copy output.mp4
 
 ### Uploading Files to DMS
 `
-curl -u userName userPassword -T "FileName" "https://dms.uom.lk/remote.php/webdav/"
+curl -u userName:userPassword -T "FileName" "https://dms.uom.lk/remote.php/webdav/"
 `
 
 <br>
 
 ### Search for a file in the DMS using PROPFIND:
 `
-curl -u userName userPassword -X PROPFIND "https://dms.uom.lk/remote.php/dav/files/apple.md"
+curl -u userName:userPassword -X PROPFIND "https://dms.uom.lk/remote.php/dav/files/apple.md"
 `
 
 <br>
@@ -73,14 +70,14 @@ curl -u userName userPassword -X PROPFIND "https://dms.uom.lk/remote.php/dav/fil
 ### Share a file or folder from the DMS using Nextcloud API:
 
 `
-curl -u userName userPassword -X POST -d "path=Movie.mp4&shareType=3&permissions=1" "https://dms.uom.lk/ocs/v2.php/apps/files_sharing/api/v1/shares?format=xml" -H "OCS-APIRequest: true"
+curl -u userName:userPassword -X POST -d "path=Movie.mp4&shareType=3&permissions=1" "https://dms.uom.lk/ocs/v2.php/apps/files_sharing/api/v1/shares?format=xml" -H "OCS-APIRequest: true"
 `
 
 <br>
 
 ### Get details of all shares:
 `
-curl -u userName userPassword -X GET "https://dms.uom.lk/ocs/v2.php/apps/files_sharing/api/v1/shares" -H "OCS-APIRequest: true"
+curl -u userName:userPassword -X GET "https://dms.uom.lk/ocs/v2.php/apps/files_sharing/api/v1/shares" -H "OCS-APIRequest: true"
 `
 
 <br>
