@@ -40,7 +40,7 @@ net use Z: https://dms.uom.lk/remote.php/webdav/ /user:userName userPassword
 ### Download files from URLs using either wget or curl:
 `
 wget -O FileName http://speedtest.tele2.net/100MB.zip
-curl -O FileName http://speedtest.tele2.net/100MB.zip
+curl -o FileName http://speedtest.tele2.net/100MB.zip
 `
 
 <br>
