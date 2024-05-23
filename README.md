@@ -4,7 +4,6 @@
 
 <br>
 
-
 ## Introduction
 UoM_DMS_Toolkit streamlines file tasks for students, faculty, and staff at UoM. Enjoy data-free downloads/uploads and multimedia processing, including M3U8 to MP4 conversion. Say goodbye to bandwidth worries and focus on your education!
 
@@ -39,8 +38,13 @@ net use Z: https://dms.uom.lk/remote.php/webdav/ /user:userName userPassword
 
 ### Download files from URLs using either wget or curl:
 `
-wget -O FileName http://speedtest.tele2.net/100MB.zip
-curl -o FileName http://speedtest.tele2.net/100MB.zip
+wget -O FileName downloadLink
+`
+<br>
+or
+<br>
+`
+curl -o FileName downloadLink
 `
 
 <br>
@@ -48,7 +52,7 @@ curl -o FileName http://speedtest.tele2.net/100MB.zip
 ### Download M3U8 files and convert them to MP4 using ffmpeg
 #### Optional ( If you want to download from a .m3u8 link )
 `
-ffmpeg -i https://example.com/video.m3u8 -c copy output.mp4
+ffmpeg -i https://example.com/video.m3u8 -c copy -threads 8 output.mp4
 `
 
 <br>
@@ -56,13 +60,6 @@ ffmpeg -i https://example.com/video.m3u8 -c copy output.mp4
 ### Uploading Files to DMS
 `
 curl -u userName:userPassword -T "FileName" "https://dms.uom.lk/remote.php/webdav/"
-`
-
-<br>
-
-### Search for a file in the DMS using PROPFIND:
-`
-curl -u userName:userPassword -X PROPFIND "https://dms.uom.lk/remote.php/dav/files/apple.md"
 `
 
 <br>
@@ -89,10 +86,9 @@ curl -u userName:userPassword -X DELETE "https://dms.uom.lk/ocs/v2.php/apps/file
 
 <br>
 
-
 ## Conclusion
 These CLI codes provide a convenient way to interact with the DMS for educational purposes, enabling data-free downloads, uploads, and sharing of files and folders.
 
 <br>
 
-# &#169; PATRIC NILACKSHAN 
+# &#169; PATRIC NILACKSHAN
