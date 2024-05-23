@@ -82,6 +82,14 @@ curl -u userName:userPassword -X GET "https://dms.uom.lk/ocs/v2.php/apps/files_s
 
 <br>
 
+### Delete a share with its share_id:
+`
+curl -u userName:userPassword -X DELETE "https://dms.uom.lk/ocs/v2.php/apps/files_sharing/api/v1/shares/<share_id>" -H "OCS-APIRequest: true"
+`
+
+<br>
+
+
 ## Conclusion
 These CLI codes provide a convenient way to interact with the DMS for educational purposes, enabling data-free downloads, uploads, and sharing of files and folders.
 
