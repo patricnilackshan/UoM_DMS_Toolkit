@@ -32,7 +32,7 @@ sudo apt install ffmpeg -y
 ## Usage
 ### Mapping DMS WebDAV Share
 `
-net use Z: https://dms.uom.lk/remote.php/webdav/ /user:userName:userPassword
+net use Z: https://dms.uom.lk/remote.php/webdav/ /user:userName userPassword
 `
 
 <br>
