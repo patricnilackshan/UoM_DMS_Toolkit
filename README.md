@@ -88,7 +88,7 @@ curl -u <userName>:<userPassword> -X DELETE "https://dms.uom.lk/ocs/v2.php/apps/
 - Run this command in a new Command Prompt in Windows to see DMS as a Local Disk in My Computer
 
 `
-net use Z: https://dms.uom.lk/remote.php/webdav/ /user:userName userPassword
+net use Z: https://dms.uom.lk/remote.php/webdav/ /user:<userName> <userPassword>
 `
 
 <br>
