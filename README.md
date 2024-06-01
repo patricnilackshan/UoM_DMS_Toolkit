@@ -18,6 +18,8 @@ UoM_DMS_Toolkit streamlines file tasks for students at UoM. Enjoy data-free down
 sudo apt update -y
 `
 
+<br>
+
 - Install ffmpeg for multimedia processing:
 
 `
