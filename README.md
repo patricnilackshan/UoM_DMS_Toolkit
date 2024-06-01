@@ -24,7 +24,7 @@ sudo apt update -y
 sudo apt install ffmpeg -y
 `
 
-- Variable are written within angular brackets `< >` 
+Variable are written within angular brackets `< >` 
 
 <br>
 
