@@ -1,10 +1,10 @@
 # __UoM DMS Toolkit__ 💻
-OPEN [__UoM_DMS_Toolkit_by_Patric.ipynb__](https://colab.research.google.com/github/patricnilackshan/UoM_DMS_Toolkit/blob/main/UoM_DMS_Toolkit_by_Patric.ipynb) in Google Colab and Run 
+JUST OPEN THE  [__UoM_DMS_Toolkit_by_Patric.ipynb__](https://colab.research.google.com/github/patricnilackshan/UoM_DMS_Toolkit/blob/main/UoM_DMS_Toolkit_by_Patric.ipynb) in Google Colab and Run 🧑‍💻
 
-##### A PROJECT BY __PATRIC NILACKSHAN__ 🧑‍💻 (pnilackshan@gmail.com)
+<br>
 <br>
 
-__BRIEF EXPLANATION ABOUT THE PROCESS IS GIVEN BELOW__
+# BRIEF EXPLANATION IS GIVEN BELOW
 
 ## Introduction 📋
 UoM_DMS_Toolkit streamlines file tasks for students at UoM. Enjoy data-free downloads/uploads and multimedia processing, including Torrents, Youtube, M3U8 links. Say goodbye to bandwidth worries and focus on your education! 😁
