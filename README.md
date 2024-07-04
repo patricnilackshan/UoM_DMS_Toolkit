@@ -78,3 +78,5 @@ These CLI codes provide a convenient way to interact with the DMS for educationa
 <br>
 
 ### © PATRIC NILACKSHAN (pnilackshan@gmail.com)
+
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=patricnilackshan.UoM_DMS_Toolkit" />
