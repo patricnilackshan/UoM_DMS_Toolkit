@@ -39,42 +39,61 @@ __OR__
 curl -o <fileName> <downloadLink>
 ```
 
+<br>
+
 ## Download M3U8 files to MP4 🔗
 ```bash
 ffmpeg -i <downloadLink> -c copy -threads 8 <fileName>
 ```
+
+<br>
 
 ## Uploading File to DMS 📤
 ```bash
 curl -u <userName>:<userPassword> -T <fileName> "https://dms.uom.lk/remote.php/webdav/"
 ```
 
+<br>
+
 ## Share file from the DMS 🔁
 ```bash
 curl -u <userName>:<userPassword> -X POST -d "path=<fileName>&shareType=3&permissions=1" "https://dms.uom.lk/ocs/v2.php/apps/files_sharing/api/v1/shares?format=json" -H "OCS-APIRequest: true"
 ```
+
+<br>
 
 ## Get details of all shares in DMS Account 📢
 ```bash
 curl -u <userName>:<userPassword> -X GET "https://dms.uom.lk/ocs/v2.php/apps/files_sharing/api/v1/shares?format=json" -H "OCS-APIRequest: true"
 ```
 
+<br>
+
 ## Delete a share with its share_ID 🗑️
 ```bash
 curl -u <userName>:<userPassword> -X DELETE "https://dms.uom.lk/ocs/v2.php/apps/files_sharing/api/v1/shares/<share_ID>" -H "OCS-APIRequest: true"
 ```
 
+<br>
 
-## Mapping DMS WebDAV Share (For Windows OS) 🪟
-__OPTIONAL__
+## Mount DMS WebDAV in My Computer 🖥️ **(OPTIONAL)**
 
-- Run this command inside a new Command Prompt in Windows to see DMS as a Local Disk in My Computer
+### To map DMS as a local disk in Windows 🪟, run this command in Command Prompt
+`
+net use Z: https://dms.uom.lk/remote.php/webdav/ /user:<userName> <userPassword>
+`
 
-    > `net use Z: https://dms.uom.lk/remote.php/webdav/ /user:<userName> <userPassword>`
+- Replace 'userName' and 'userPassword' with actual values
+
+### To access DMS in Linux 🐧, enter this address in the `Enter server address` field in your File Manager
+`
+davs://dms.uom.lk/remote.php/webdav/
+`
+
 <br>
 
 ## Conclusion 😎
-These CLI codes provide a convenient way to interact with the DMS for educational purposes, enabling data-free downloads, uploads, and sharing of files and folders.🧑‍💻
+This notebook provides a convenient way to interact with the DMS for educational purposes, enabling data-free downloads, uploads, and sharing of files and folders.🧑‍💻
 
 <br>
 
