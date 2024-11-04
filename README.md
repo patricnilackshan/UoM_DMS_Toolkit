@@ -2,9 +2,7 @@
 
 ## Introduction 📋
 
-<div style="text-align: justify;">
-The <strong >UoM DMS Toolkit</strong> is designed to streamline file management tasks for students at the University of Moratuwa (UoM). This toolkit allows for data-free downloads/uploads and multimedia processing, including support for Torrents, YouTube videos, and M3U8 links. With this toolkit, you can say goodbye to bandwidth worries and focus on your education! 😁
-</div>
+The **UoM DMS Toolkit** is designed to streamline file management tasks for students at the University of Moratuwa (UoM). This toolkit allows for data-free downloads/uploads and multimedia processing, including support for Torrents, YouTube videos, and M3U8 links. With this toolkit, you can say goodbye to bandwidth worries and focus on your education! 😁
 
 ### Creator ✨
 
